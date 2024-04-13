@@ -10,3 +10,57 @@ body {
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
 }
+
+.login-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 5rem;
+	min-height: 100vh;
+	margin-top: -100px;
+}
+
+.login-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding: 6rem 0;
+}
+
+.login-network h1, .login-provider h1, .login-center h1{
+	text-align: center;
+	font-size: x-large;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.login-network select {
+	padding: 6px;
+	border-radius: 5px;
+	width: 200px;
+}
+
+
+.login-provider ul {
+	list-style-type: none;
+}
+
+.login-provider ul li {
+	list-style-type: none;
+	margin: 20px 0 20px 0;
+	padding: 20px 10px 20px 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: aliceblue;
+	color: rgb(99, 96, 96);
+	text-align: center;
+	font-weight: bold;
+}
+
+.login-center {
+	text-align: center;
+}

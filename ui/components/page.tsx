@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Appbar from '@/components/appbar'
 import BottomNav from '@/components/bottom-nav'
+import { ZkShield } from 'zkshield'
 
 interface Props {
 	title?: string
@@ -14,7 +15,13 @@ const Page = ({ title, children }: Props) => (
 				<title>Whisper Wallet | {title}</title>
 			</Head>
 		) : null}
-
+<ZkShield  mainContainerClassName='login-main'
+                innerContainerClassName='login-center'
+				selectNetworkClassName='login-network'
+                selectProviderClassName='login-provider'
+                ignoreConnectForTesting={false}
+                localAccount={'EKEnaPrfADEKKPAV5AT57sjD22qRQ7cuxEPGW9LafMwd638R2EUH'}
+                >
 		<Appbar />
 
 		<main
@@ -28,6 +35,7 @@ const Page = ({ title, children }: Props) => (
 		</main>
 
 		<BottomNav />
+		</ZkShield>
 	</>
 )
 
