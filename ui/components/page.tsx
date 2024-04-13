@@ -19,7 +19,7 @@ const Page = ({ title, children }: Props) => (
                 innerContainerClassName='login-center'
 				selectNetworkClassName='login-network'
                 selectProviderClassName='login-provider'
-                ignoreConnectForTesting={false}
+                ignoreConnectForTesting={true}
                 localAccount={'EKEnaPrfADEKKPAV5AT57sjD22qRQ7cuxEPGW9LafMwd638R2EUH'}
                 >
 		<Appbar />
