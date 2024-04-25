@@ -1,5 +1,6 @@
 import Page from '@/components/page'
 import Section from '@/components/section'
+import ShortenedAddress from '@/components/shortenedAddress';
 import { useEffect, useState } from 'react';
 
 
@@ -34,7 +35,9 @@ export default function Profile() {
 				<div className="flex flex-col w-full mt-6">
 					<div className="grid card mb-2 ">
 						<h3 className='text-lg'>Address</h3>
-						<p className='text-sm'>{shortenAddress(walletAddress)}</p>
+						<p className='text-sm'>
+							<ShortenedAddress address={walletAddress} />
+						</p>
 					</div>
 					<div className="grid card">
 						<h3 className='text-lg'>Balance</h3>
